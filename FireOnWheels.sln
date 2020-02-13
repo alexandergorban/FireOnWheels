@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29709.97
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FireOnWheels.Notification.Service", "FireOnWheels\FireOnWheels.Notification.Service.csproj", "{7279990F-5ED0-4BF0-ABEB-6DEAAF327CE7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FireOnWheels.Messaging", "FireOnWheels.MessageContracts\FireOnWheels.Messaging.csproj", "{EE8D1F0A-C6F6-41BD-A191-E0D2D661A2DB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FireOnWheels.Registration.Service", "FireOnWheels.Registration.Service\FireOnWheels.Registration.Service.csproj", "{0AC9BBE7-2CA6-4D58-9DE7-DA63DAA623CA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FireOnWheels.Saga", "FireOnWheels.Saga\FireOnWheels.Saga.csproj", "{0C59B5E0-C525-432C-A6AF-7335F4AB1793}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FireOnWheels.Registration.Web", "FireOnWheels.Registration\FireOnWheels.Registration.Web.csproj", "{A0260A1F-5344-4941-894F-4B48FD08B16F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7279990F-5ED0-4BF0-ABEB-6DEAAF327CE7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7279990F-5ED0-4BF0-ABEB-6DEAAF327CE7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7279990F-5ED0-4BF0-ABEB-6DEAAF327CE7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7279990F-5ED0-4BF0-ABEB-6DEAAF327CE7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EE8D1F0A-C6F6-41BD-A191-E0D2D661A2DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EE8D1F0A-C6F6-41BD-A191-E0D2D661A2DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EE8D1F0A-C6F6-41BD-A191-E0D2D661A2DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EE8D1F0A-C6F6-41BD-A191-E0D2D661A2DB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0AC9BBE7-2CA6-4D58-9DE7-DA63DAA623CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0AC9BBE7-2CA6-4D58-9DE7-DA63DAA623CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0AC9BBE7-2CA6-4D58-9DE7-DA63DAA623CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0AC9BBE7-2CA6-4D58-9DE7-DA63DAA623CA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0C59B5E0-C525-432C-A6AF-7335F4AB1793}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0C59B5E0-C525-432C-A6AF-7335F4AB1793}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0C59B5E0-C525-432C-A6AF-7335F4AB1793}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0C59B5E0-C525-432C-A6AF-7335F4AB1793}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A0260A1F-5344-4941-894F-4B48FD08B16F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A0260A1F-5344-4941-894F-4B48FD08B16F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A0260A1F-5344-4941-894F-4B48FD08B16F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A0260A1F-5344-4941-894F-4B48FD08B16F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B69F991C-FC00-42B8-8DCB-85B4592780B6}
+	EndGlobalSection
+EndGlobal

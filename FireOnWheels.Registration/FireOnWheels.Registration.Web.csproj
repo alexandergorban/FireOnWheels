@@ -1,0 +1,57 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>dnx451</TargetFramework>
+    <AssemblyName>FireOnWheels.Registration</AssemblyName>
+    <OutputType>Exe</OutputType>
+    <PackageId>FireOnWheels.Registration</PackageId>
+    <UserSecretsId>aspnet5-FireOnWheels.Registration-759f92bb-ab9f-4add-b08e-78380660d51e</UserSecretsId>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="wwwroot\**\*;node_modules\**\*" />
+    <EmbeddedResource Remove="wwwroot\**\*;node_modules\**\*" />
+    <None Update="**.user;**.vspscc">
+      <CopyToPublishDirectory>Never</CopyToPublishDirectory>
+    </None>
+    <ProjectReference Include="..\FireOnWheels.MessageContracts\FireOnWheels.Messaging.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc" />
+    <PackageReference Include="EntityFramework.Commands" Version="7.0.0" />
+    <PackageReference Include="EntityFramework.MicrosoftSqlServer" Version="7.0.0" />
+    <PackageReference Include="MassTransit" Version="3.2.0" />
+    <PackageReference Include="MassTransit.RabbitMQ" Version="3.2.0" />
+    <PackageReference Include="Microsoft.AspNet.Authentication.Cookies" Version="1.0.0" />
+    <PackageReference Include="Microsoft.AspNet.Diagnostics.Entity" Version="7.0.0" />
+    <PackageReference Include="Microsoft.AspNet.IISPlatformHandler" Version="1.0.0" />
+    <PackageReference Include="Microsoft.AspNet.Mvc" Version="6.0.0" />
+    <PackageReference Include="Microsoft.AspNet.Mvc.TagHelpers" Version="6.0.0" />
+    <PackageReference Include="Microsoft.AspNet.Server.Kestrel" Version="1.0.0" />
+    <PackageReference Include="Microsoft.AspNet.StaticFiles" Version="1.0.0" />
+    <PackageReference Include="Microsoft.AspNet.Tooling.Razor" Version="1.0.0" />
+    <PackageReference Include="Microsoft.Extensions.CodeGenerators.Mvc" Version="1.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.FileProviderExtensions" Version="1.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="1.0.2" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.UserSecrets" Version="1.0.2" />
+    <PackageReference Include="Microsoft.Extensions.Logging" Version="1.0.2" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Console" Version="1.0.2" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="1.0.2" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.BrowserLink" Version="1.0.1" />
+  </ItemGroup>
+
+  <Target Name="PrepublishScript" BeforeTargets="PrepareForPublish">
+    <Exec Command="npm install" />
+    <Exec Command="bower install" />
+    <Exec Command="gulp clean" />
+    <Exec Command="gulp min" />
+  </Target>
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp1.0</TargetFramework>
+  </PropertyGroup>
+
+</Project>

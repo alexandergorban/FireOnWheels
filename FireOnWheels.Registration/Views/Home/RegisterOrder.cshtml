@@ -1,0 +1,58 @@
+﻿@model FireOnWheels.Registration.ViewModels.OrderViewModel
+@{
+    ViewData["Title"] = "Home Page";
+}
+<div>
+    <img src="~/images/fireonwheels.png" />
+    <h2>Order registration</h2>
+</div>
+<form asp-controller="Home" asp-action="RegisterOrder">
+    <div class="row">
+        <div class="col-md-4">
+            <h3>Pick up from</h3>
+            <div class="form-group">
+                <label asp-for="PickupName"></label>
+                <input asp-for="PickupName" class="form-control" />
+            </div>
+            <div class="form-group">
+                <label asp-for="PickupAddress"></label>
+                <input asp-for="PickupAddress" class="form-control" />
+            </div>
+            <div class="form-group">
+                <label asp-for="PickupCity"></label>
+                <input asp-for="PickupCity" class="form-control" />
+            </div>
+        </div>
+        <div class="col-md-4">
+            <h3>Deliver to</h3>
+            <div class="form-group">
+                <label asp-for="DeliverName"></label>
+                <input asp-for="DeliverName" class="form-control" />
+            </div>
+            <div class="form-group">
+                <label asp-for="DeliverAddress"></label>
+                <input asp-for="DeliverAddress" class="form-control" />
+            </div>
+            <div class="form-group">
+                <label asp-for="DeliverCity"></label>
+                <input asp-for="DeliverCity" class="form-control" />
+            </div>
+        </div>
+        <div class="col-md-4">
+            <h3>Package info</h3>
+            <div class="form-group">
+                <label asp-for="Weight"></label>
+                <input asp-for="Weight" class="form-control" />
+            </div>
+            <div class="form-group">
+                <label asp-for="Fragile"></label>
+                <input asp-for="Fragile" class="form-control" />
+            </div>
+            <div class="form-group">
+                <label asp-for="Oversized"></label>
+                <input asp-for="Oversized" class="form-control" />
+            </div>
+        </div>
+    </div>
+    <input type="submit" class="btn btn-info" value="Submit" />
+</form>

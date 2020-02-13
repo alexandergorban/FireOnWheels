@@ -1,0 +1,19 @@
+{
+  "version": "1.0.0-*",
+  "frameworks": {
+    "net451": {
+      "wrappedProject": "../../FireOnWheels.MessageContracts/FireOnWheels.Messaging.csproj",
+      "bin": {
+        "assembly": "../../FireOnWheels.MessageContracts/obj/{configuration}/FireOnWheels.Messaging.dll",
+        "pdb": "../../FireOnWheels.MessageContracts/obj/{configuration}/FireOnWheels.Messaging.pdb"
+      },
+      "dependencies": {
+        "MassTransit": "3.2.0",
+        "NewId": "2.1.3",
+        "Newtonsoft.Json": "7.0.1",
+        "MassTransit.RabbitMQ": "3.2.0",
+        "RabbitMQ.Client": "3.6.0"
+      }
+    }
+  }
+}
